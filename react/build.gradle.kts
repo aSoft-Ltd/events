@@ -14,7 +14,8 @@ kotlin {
         val main by getting {
             dependencies {
                 api(projects.eventsCore)
-                api(asoft.reakt.core)
+                api(project.dependencies.platform(kotlinw.bom))
+                api(kotlinw.react.core)
             }
         }
 
