@@ -21,7 +21,7 @@ kotlin {
 
         val test by getting {
             dependencies {
-                implementation(projects.expectCoroutines)
+                implementation(projects.kommanderCoroutines)
             }
         }
     }

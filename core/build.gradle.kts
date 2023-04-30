@@ -15,13 +15,13 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 api(kotlinx.serialization.core)
-                api(projects.liveCore)
+                api(projects.cinematicLiveCore)
             }
         }
 
         val commonTest by getting {
             dependencies {
-                implementation(projects.expectCoroutines)
+                implementation(projects.kommanderCoroutines)
             }
         }
     }
