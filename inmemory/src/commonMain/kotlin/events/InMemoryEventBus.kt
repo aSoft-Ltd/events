@@ -1,9 +1,9 @@
 package events
 
-import live.MutableLive
-import live.WatchMode
-import live.watch
-import live.mutableLiveOf
+import cinematic.MutableLive
+import cinematic.WatchMode
+import cinematic.watch
+import cinematic.mutableLiveOf
 
 class InMemoryEventBus : EventBus() {
     private val dispatchers = mutableMapOf<String, MutableLive<Any>>()
