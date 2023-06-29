@@ -7,6 +7,7 @@ import events.SubscriptionException
 import expect.expect
 import expect.expectFailure
 import expect.toBe
+import kommander.expect
 import kotlinx.coroutines.test.runTest
 import kotlin.test.Ignore
 import kotlin.test.Test
@@ -30,7 +31,7 @@ class EventBusTest {
             receivedData = data
         }
         bus.dispatch(event)
-        expect(receivedData).toBe(7)
+        expect<Int?>(receivedData).toBe(7)
     }
 
     @Test
