@@ -15,7 +15,7 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 api(kotlinx.serialization.core)
-                api(projects.cinematicLiveCore)
+                api(libs.cinematic.live.core)
             }
         }
 
